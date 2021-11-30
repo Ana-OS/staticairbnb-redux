@@ -1,3 +1,5 @@
+import { SET_FLATS } from '../actions';
+
 const flatsReducer = (state, action) => { 
   // flatsReducer receives state and action. If action then it returns a new state, if not it just returns the previous state
   if (state === undefined) {
@@ -6,7 +8,7 @@ const flatsReducer = (state, action) => {
   }
   // to do: handle some actions
   switch(action.type) {
-    case 'SET_FLATS':
+    case SET_FLATS:
       return action.payload;
     default:
       return state; 

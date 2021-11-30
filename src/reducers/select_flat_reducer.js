@@ -1,3 +1,5 @@
+import { SELECT_FLAT } from '../actions';
+
 const selectFlatReducer = (state, action) => { 
 
     if (state === undefined) {
@@ -5,7 +7,7 @@ const selectFlatReducer = (state, action) => {
     }
 
     switch(action.type) {
-      case 'SELECT_FLAT':
+      case SELECT_FLAT:
         return action.payload;
       default:
         return state; 
