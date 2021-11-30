@@ -8,3 +8,13 @@ export function setFlats() {
     payload: flats
   } 
 }
+
+
+export function selectFlat(flat) {
+  // to do: Api call! For now, simulate a DB
+  console.log(flat)
+  return {
+    type: 'SELECT_FLAT',
+    payload: flat
+  } 
+}

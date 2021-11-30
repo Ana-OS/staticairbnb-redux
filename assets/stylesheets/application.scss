@@ -25,19 +25,21 @@ body {
 
 .flat-list {
   padding-left: 10px;
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   border:2px solid red;
 
-  .flat {
-    width: calc(30% - 10px);
-    height:230px;
+  .card {
+    width: calc(50% - 10px);
     margin-right: 10px;
     margin-bottom: 10px;
     border:2px solid green;
 
+  }
+  .selected {
+    border: 6px dashed red;
   }
 }
 
@@ -46,4 +48,8 @@ body {
   width: 20px;
   background-color: red;
   border-radius: 50%;
+}
+
+.selected {
+  border: 6px dashed red;
 }
